@@ -1,0 +1,98 @@
+imie=input('Podaj Imie \n')
+nazwisko=input('Podaj Nazwisko \n')
+wiek=input('Podaj Wiek \n')
+
+
+
+
+
+print("Czesc"+" "+imie+" "+nazwisko)
+if (int(wiek)>18):
+    print("Jestes pelnoletni")
+else:
+    print("Nie jestes pelnoletni")
+ 
+ 
+ 
+ 
+ 
+ 
+    
+a=input()
+b=input()
+c=input()    
+
+if(int(a)>int(b) and int(a)>int(c)):
+    print(a+"\n")
+if(int(b)>int(b) and int(b)>int(c)):
+    print(b+"\n")
+else:
+    print(c+"\n")
+    
+    
+znak=65
+znak2=97
+
+heh=input()   
+i=0
+
+while(i<26):
+    print(chr(znak2+i)+chr(znak+i))
+    i+=int(heh)
+
+ile=input('Podaj Ile liczba mam posortowac \n')
+jak=input('Malejąco czy rosnąco \n')
+zakres=input('Ile wypisac \n')
+lista=[]
+
+for i in range(int(ile)):
+    liczba=input()
+    lista.append(int(liczba))
+    
+    
+lista.sort()
+if(jak=="malejąco"):
+    lista.reverse()
+    
+for i in range(int(zakres)):
+    print(lista[i])
+    
+x=1
+z=1
+
+n=input()   
+
+
+
+
+fib=0
+i=0
+for i in range(6):
+    fib=x+fib
+    x=fib-x
+    print(fib)
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
