@@ -33,9 +33,66 @@ else:
 znak=65
 znak2=97
 
+heh=input()   
 i=0
 
 while(i<26):
     print(chr(znak2+i)+chr(znak+i))
-    i+=1
+    i+=int(heh)
 
+ile=input('Podaj Ile liczba mam posortowac \n')
+jak=input('Malejąco czy rosnąco \n')
+zakres=input('Ile wypisac \n')
+lista=[]
+
+for i in range(int(ile)):
+    liczba=input()
+    lista.append(int(liczba))
+    
+    
+lista.sort()
+if(jak=="malejąco"):
+    lista.reverse()
+    
+for i in range(int(zakres)):
+    print(lista[i])
+    
+x=1
+z=1
+
+n=input()   
+
+
+
+
+fib=0
+i=0
+for i in range(6):
+    fib=x+fib
+    x=fib-x
+    print(fib)
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
