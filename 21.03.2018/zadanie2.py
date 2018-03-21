@@ -2,21 +2,23 @@
 #encoding: utf-8
 import sys
 
-file=open(sys.argv[1])
+with open(sys.argv[1],"r") as f:
+    napis1=f.read()
+    
 
-def funkcja(file):
+def funkcja(napis):
     
     slownik={}
     
     napis2=str(napis).splitlines()
     
-    for i in napis2:
+    for i in filter(None,napis2):
         slownik2=str(i).split(":")
         slownik[slownik2[0]]=slownik2[1]
 
     return slownik
 
 
-print funkcja("'k1:w1 \n k2:w2 \n k3:w3'")
+print funkcja(napis1)
 
 
