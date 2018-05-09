@@ -1,24 +1,24 @@
 import Tkinter as tk
-import tkFont as tkF
-import tkMessageBox as tkMB
-root=tk.Tk()
+import Tkfron as tkF
 
-def ShowMsgBox():
-    tkMB.showinfo("Wywołanie")
+root = tk.Tk()
+default_font=tkF.nameFront("TkDefaultFont")
+default_font.configure(size=20)
+root.option_add("*Front",default_font)
+def read_v():
+	x=v.get();
+	if(v==1)
+v=tk.IntVar()
+rb1=tk.RadioButton(root,text="R",variable=v,value=1)
+rb1.grid(column=0,row=0)
+rb2=tk.RadioButton(root,text="G",variable=v,value=2)
+rb2.grid(column=1,row=0)
+rb3=tk.RadioButton(root,text="B",variable=v,value=3)
+rb3.grid(column=2,row=0)
 
-def_fnt = tkF.nametofont("TkDefualtFont")
-def_fnt.configure(size=20)
+bt=tk.Button(root,text="stop",comand=)
+bt.grid(row=1,column=0)
 
-root.option_add("*Font", def_fnt)
 
-e1= tk.Entry(root)
-e1.grid(row=1, column=0,rowspan=2)
-
-bt1 = tk.Button(root, text="start", command=showMsgBox)
-bt1.grid(row=1,column=0, sticky=tk.W)
-bt2 = tk.Button(root, text="stop", command=root.quit)
-bt1.grid(row=1,column=0, sticky=tk.E)
-
-root.main
 
 root.mainloop()
